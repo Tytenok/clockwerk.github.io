@@ -1,0 +1,455 @@
+﻿/*============================ */
+/*============================ */
+/*============================ */
+/* СТИЛИ ДЛЯ ОСНОВНОЙ СТРАНИЦЫ */
+/*============================ */
+/*============================ */
+/*============================ */
+
+
+html,body {
+max-width: 100%;
+font-family : Lobster;
+margin: 0px auto;
+height: 100%;
+}*{
+margin:0;
+padding:0;
+}
+
+
+header,footer{
+position: absolute;
+width:100%;
+color:white;
+}
+
+header{
+height:8vh;
+}
+
+
+
+footer{
+height:7vh;
+bottom:0;
+width:100%;
+}
+
+
+.nav{
+position: relative;
+width:100%;
+}
+
+.nav a{
+position:relative;
+left:29%;
+top:-105px;
+color:white;
+text-decoration:none;
+margin-right:200px;
+width:auto;
+height:auto;
+text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+font-size:25px;
+max-width:100%;
+}
+
+footer p{
+position: fixed;
+left:46%;
+bottom:20px;
+color:orange;
+width:100%;
+}
+
+
+.intro {
+height: 100vh;
+}
+
+.img1 img {
+height:auto;
+max-width:100%;
+position: fixed;
+left:10%;
+top:150px;
+max-width: 100%;
+
+}
+
+.img2 img {
+height:auto;
+max-width:100%;
+width:auto;
+position: fixed;
+right:10%;
+top:150px;
+max-width: 100%;
+
+}
+
+.img1 button{
+left:12.5%;
+top:760px;
+height: 42px;
+color: #f2f2f2;
+padding: 10px;
+font-size: 20px;
+position: fixed;
+
+
+}
+
+.img2 button{
+right:12.5%;
+top:760px;
+height: 42px;
+color: #f2f2f2;
+padding: 10px;
+font-size: 20px;
+position: fixed;
+
+
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+button:hover {
+	animation: bounce 1s;
+}
+ 
+
+
+
+.text1 p {
+height:auto;
+max-width:100%;
+left:32%;
+position:absolute;
+top:320px;
+font-family : Lobster;
+font-size:5vw;
+color:white;
+text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+
+}
+
+
+
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #ffff00;
+background: rgb(31,31,60);
+background: linear-gradient(90deg, rgba(31,31,60,1) 0%, rgba(193,194,27,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(193,194,27,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #ffff00;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #ffff00;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+
+
+
+
+/*============================ */
+/*============================ */
+/*============================ */
+/* СТИЛИ ДЛЯ СТРАНИЦЫ ОПЛАТЫ   */
+/*============================ */
+/*============================ */
+/*============================ */
+
+
+.form1 {
+height:600px;
+width:500px;
+left:36.5%;
+position:absolute;
+top:145px;
+max-width:100%;
+color:#ffff00;
+text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+font-size:35px;
+
+
+}
+
+.form1 button{
+left:42%;
+top:780px;
+height: 42px;
+color: #f2f2f2;
+padding: 10px;
+font-size: 20px;
+position: fixed;
+}
+
+input[type=text] {
+padding: 10px;
+width:100%;
+box-sizing: border-box;
+margin:10px 0;
+border:0;
+box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+border-radius:10px;
+font-family:inherit;
+font-size:20px;
+max-width:100%;
+}
+
+input[type=password] {
+padding: 10px;
+width:100%;
+box-sizing: border-box;
+margin:10px 0;
+border:0;
+box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+border-radius:10px;
+font-family:inherit;
+font-size:20px;
+max-width:100%;
+}
+
+/*============================ */
+/*============================ */
+/*============================ */
+/* СТИЛИ ДЛЯ СТРАНИЦЫ КАТАЛОГА */
+/*============================ */
+/*============================ */
+/*============================ */
+
+.img_catalog1 img {
+height:550px;
+max-width:100%;
+position: fixed;
+left:2%;
+top:180px;
+max-width: 100%;
+}
+
+.img_catalog2 img {
+height:550px;
+max-width:100%;
+position: fixed;
+right:2%;
+top:180px;
+max-width: 100%;
+}
+
+.img_catalog3 img {
+height:550px;
+max-width:100%;
+position: fixed;
+right:27%;
+top:180px;
+max-width: 100%;
+}
+
+.img_catalog4 img {
+height:550px;
+max-width:100%;
+position: fixed;
+left:27%;
+top:180px;
+max-width: 100%;
+}
+
+.img_catalog1 button{
+left:4%;
+top:760px;
+weight:20px;
+height: 20px;
+color: #f2f2f2;
+padding: 10px;
+font-size: 15px;
+position: fixed;
+}
+
+.img_catalog2 button{
+right:4%;
+top:760px;
+weight:20px;
+height: 20px;
+color: #f2f2f2;
+padding: 10px;
+font-size: 15px;
+position: fixed;
+}
+
+.img_catalog3 button{
+left:29%;
+top:760px;
+weight:20px;
+height: 20px;
+color: #f2f2f2;
+padding: 10px;
+font-size: 15px;
+position: fixed;
+}
+
+.img_catalog4 button{
+right:29%;
+top:760px;
+weight:20px;
+height: 20px;
+color: #f2f2f2;
+padding: 10px;
+font-size: 15px;
+position: fixed;
+}
+
+
+
+input[type=text1] {
+padding: 10px;
+width:500px;
+height:230px;
+box-sizing: border-box;
+margin:10px 0;
+border:0;
+box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+border-radius:10px;
+font-family:inherit;
+font-size:20px;
+}
+
+
+
+
+/*============================ */
+/*============================ */
+/*============================ */
+/*        МЕДИАЗАПРОСЫ         */
+/*============================ */
+/*============================ */
+/*============================ */
+
+
+@media (max-width:1000px) {
+.text1 p {
+max-width:auto;
+height:10px;
+}
+
+header {
+max-width:auto;
+max-height:auto;
+}
+
+header img {
+position:relative;
+left:-30px;
+}
+
+.nav a {
+left:300px;
+margin-right:80px;
+}
+
+footer {
+max-width:auto;
+max-height:auto;
+}
+
+.img1 img{
+max-width:auto;
+height:300px;
+display:flex;
+margin:auto;
+top:350px;
+}
+
+.img1 button{
+left:50px;
+}
+
+.img2 button{
+right:50px;
+}
+
+.img2 img{
+max-width:auto;
+height:300px;
+display:flex;
+margin:auto;
+top:350px;
+}
+}
+       
+
+
